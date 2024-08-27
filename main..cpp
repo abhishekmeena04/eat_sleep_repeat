@@ -47,3 +47,56 @@ int main() {
 
     return 0;
 }
+
+ANOTHER SOLUTIN INT MIN = ARR[O]
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int SmallestElement(const vector<int>& arr) {
+    int min = arr[0];
+    for (int i = 1; i < arr.size(); i++) {  // Start from the second element
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+    }
+    return min;
+}
+
+int main() {
+    int n;
+
+    // Taking the size of the first array as input
+    cout << "Enter the number of elements in the first array: ";
+    cin >> n;
+
+    vector<int> arr1(n);
+
+    // Taking the elements of the first array as input
+    cout << "Enter the elements of the first array: ";
+    for (int i = 0; i < n; i++) {
+        cin >> arr1[i];
+    }
+
+    // Finding the smallest element in the first array
+    int min1 = SmallestElement(arr1);
+    cout << "The smallest element in the first array is: " << min1 << endl;
+
+    // Taking the size of the second array as input
+    cout << "Enter the number of elements in the second array: ";
+    cin >> n;
+
+    vector<int> arr2(n);
+
+    // Taking the elements of the second array as input
+    cout << "Enter the elements of the second array: ";
+    for (int i = 0; i < n; i++) {
+        cin >> arr2[i];
+    }
+
+    // Finding the smallest element in the second array
+    int min2 = SmallestElement(arr2);
+    cout << "The smallest element in the second array is: " << min2 << endl;
+
+    return 0;
+}
