@@ -1,3 +1,4 @@
+Q.1. Find the smallest element in an array
 #include <iostream>
 #include <vector>
 #include <limits.h> // For INT_MAX
