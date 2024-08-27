@@ -51,3 +51,12 @@ int main() {
 
     return 0;
 }
+
+Enter the number of elements in the array: 5
+Enter the elements of the array: 3 1 4 1 5
+The second smallest element in the array is: 3
+c
+Copy code
+Enter the number of elements in the array: 5
+Enter the elements of the array: 2 2 2 2 2
+There is no second smallest element in the array.

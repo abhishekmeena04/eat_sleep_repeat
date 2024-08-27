@@ -37,3 +37,6 @@ int main() {
 
     return 0;
 }
+Enter the number of elements in the array: 5
+Enter the elements of the array: 1 2 3 4 5
+The sum of the elements in the array is: 15

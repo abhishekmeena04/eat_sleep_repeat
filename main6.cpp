@@ -43,3 +43,7 @@ int main() {
 
     return 0;
 }
+Enter the number of elements in the array: 5
+Enter the elements of the array: 3 1 4 1 5
+The largest element in the array is: 5
+The smallest element in the array is: 1
