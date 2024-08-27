@@ -1,6 +1,6 @@
 Q.2: Find the Largest element in an array
 
-// with sorting algorithm
+with sorting algorithm
 
 #include <iostream>
 #include <vector>
