@@ -23,7 +23,7 @@ int main() {
 
     return 0;
 }
-
+Smallest element in the array: -1
 // with sorting algorithm
 
 #include <iostream>
@@ -47,6 +47,7 @@ int main() {
 
     return 0;
 }
+Smallest element in the array: -1
 
 ANOTHER SOLUTIN INT MIN = ARR[O]
 #include <iostream>
@@ -100,3 +101,5 @@ int main() {
 
     return 0;
 }
+The smallest element in the array is: 0
+The smallest element in the array is: 5

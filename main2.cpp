@@ -23,7 +23,7 @@ int main() {
 
     return 0;
 }
-
+Largest element in the array: 88
 // actual solution
 
 #include <iostream>
@@ -51,7 +51,7 @@ int main() {
 
     return 0;
 }
-
+Largest element in the array: 88
 //TU4WARD
 
 
@@ -81,5 +81,6 @@ int main() {
   return 0;
 }
 
-
+The largest element in the array is: 5
+The largest element in the array is: 10
 

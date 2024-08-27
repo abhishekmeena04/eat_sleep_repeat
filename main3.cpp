@@ -42,4 +42,5 @@ int main() {
 
     return 0;
 }
-
+Second smallest element: 2
+Second largest element: 50
