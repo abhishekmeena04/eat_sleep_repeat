@@ -23,3 +23,27 @@ int main() {
 
     return 0;
 }
+
+// with sorting algorithm
+
+#include <iostream>
+#include <vector>
+#include <algorithm> // For std::sort
+using namespace std;
+
+int findSmallestElement(vector<int>& arr) {
+
+    sort(arr.begin(), arr.end());
+
+    
+    return arr[0];
+}
+
+int main() {
+    vector<int> arr = {34, 15, 88, 2, 7, -1, 50};
+
+    int smallest = findSmallestElement(arr);
+    cout << "Smallest element in the array: " << smallest << endl;
+
+    return 0;
+}
