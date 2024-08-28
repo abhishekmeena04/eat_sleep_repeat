@@ -25,7 +25,7 @@ public:
 #include <vector>
 using namespace std;
 
-// Function to reverse a part of the array from index start to end
+// Function to reverse a portion of the array
 void reverseArray(vector<int>& arr, int start, int end) {
     while (start < end) {
         swap(arr[start], arr[end]);
@@ -34,9 +34,10 @@ void reverseArray(vector<int>& arr, int start, int end) {
     }
 }
 
+// Function to rotate the array to the right by k positions
 void rotateArray(vector<int>& arr, int k) {
     int n = arr.size();
-    k = k % n;  // In case k is greater than the size of the array
+    k = k % n;  // Handle cases where k > n
 
     // Step 1: Reverse the entire array
     reverseArray(arr, 0, n - 1);
