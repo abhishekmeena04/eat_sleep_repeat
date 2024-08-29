@@ -28,7 +28,7 @@ The length of the string is: 13
 #include <iostream>
 using namespace std;
 
-int findLength(const char str[]) {
+int findLength(const string str) {
     int length = 0;
 
     // Loop through the string until the null terminator is reached
@@ -40,11 +40,9 @@ int findLength(const char str[]) {
 }
 
 int main() {
-    char str[100];
+    string str = "GeeksforGeeks";
 
-    // Input the string from the user
-    cout << "Enter a string: ";
-    cin.getline(str, 100);
+    
 
     // Find the length of the string
     int length = findLength(str);

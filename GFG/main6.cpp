@@ -1,4 +1,5 @@
-Q.18. Write a Program to Print Check Whether a Character is an Alphabet or Not
+Q.18. Write a Program to Print Check Whether a Character is an Alphabet or Not.?
+
 #include <iostream>
 
 using namespace std;
@@ -22,6 +23,7 @@ int main() {
     checkAlphabet(c);
 
     return 0;
+    
 }
 
 Enter a character: A

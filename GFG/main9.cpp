@@ -40,4 +40,4 @@ int main() {
 If the user inputs the string "Hello World":
 
 The vowels are 'e' and 'o' (twice).
-The output will be: "The number of vowels in the string is: 3".
+The output will be: "The number of vowels in the string is: 3". 
