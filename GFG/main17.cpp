@@ -70,3 +70,7 @@ int main()
 
     return 0;
 }
+
+
+Example 1: If you input 12321, the output will be "12321 is a palindrome." because it reads the same forwards and backwards.
+Example 2: If you input 12345, the output will be "12345 is not a palindrome." because it does not read the same forwards and backwards.
