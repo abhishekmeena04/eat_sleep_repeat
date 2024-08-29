@@ -38,6 +38,20 @@ int main() {
 Original array: 1 2 3 4 5 
 Reversed array: 5 4 3 2 1
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // another approach with algo
 #include <iostream>
 #include <vector>
@@ -74,6 +88,15 @@ int main() {
 Enter the number of elements in the array: 5
 Enter the elements of the array: 5 4 3 2 1
 Sorted array: 1 2 3 4 5
+
+
+
+
+
+
+
+
+
 
 // another
 #include <iostream>

@@ -1,5 +1,12 @@
 Q.2: Find the Largest element in an array
 
+
+
+
+
+
+
+
 with sorting algorithm
 
 #include <iostream>
@@ -24,6 +31,21 @@ int main() {
     return 0;
 }
 Largest element in the array: 88
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // actual solution
 
 #include <iostream>
@@ -52,6 +74,20 @@ int main() {
     return 0;
 }
 Largest element in the array: 88
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //TU4WARD
 
 

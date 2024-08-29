@@ -1,4 +1,5 @@
 Q.1. Find the smallest element in an array
+
 #include <iostream>
 #include <vector>
 #include <limits.h> // For INT_MAX
@@ -23,7 +24,22 @@ int main() {
 
     return 0;
 }
+
 Smallest element in the array: -1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // with sorting algorithm
 
 #include <iostream>
@@ -49,7 +65,23 @@ int main() {
 }
 Smallest element in the array: -1
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ANOTHER SOLUTIN INT MIN = ARR[O]
+
 #include <iostream>
 #include <vector>
 using namespace std;

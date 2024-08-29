@@ -5,6 +5,7 @@ Q.7 . Find Second Smallest Element in an Array
 using namespace std;
 
 int findSecondSmallest(const vector<int>& arr) {
+    
     int smallest = INT_MAX, secondSmallest = INT_MAX;
 
     // Traverse the array to find the smallest and second smallest elements
