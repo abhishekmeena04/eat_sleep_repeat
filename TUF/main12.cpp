@@ -4,9 +4,7 @@ Q.12. Remove Duplicates From an Unsorted Array.?
 using namespace std ;
 
 class removeDuplicate {
-
 public:
-
     void duplicate(int arr[], int n) {
 
         map<int, int>mp ;
@@ -18,12 +16,11 @@ public:
             }
         }
     }
-
-} ;
+};
 int main() {
 
-    int arr[] = {4, 3, 9, 2, 4, 1, 10, 89, 34} ;
-    int n = 9  ;
+    int arr[] = {4, 3, 9, 2, 4, 1, 10, 89, 34};
+    int n = 9;
 
     removeDuplicate d1  ;
     d1.duplicate(arr, n) ;
