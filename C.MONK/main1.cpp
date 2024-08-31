@@ -9,18 +9,17 @@ public:
     int firstNonRepeat(vector<int>& arr) {
         unordered_map<int, int> mp;
         
-        // Count the frequency of each element in the array
         for (int i = 0; i < arr.size(); i++) {
-            mp[arr[i]]++;
+            mp[arr[i]]++; 
         }
         
-        // Find the first element with a frequency of 1
+        
         for (int i = 0; i < arr.size(); i++) {
             if (mp[arr[i]] == 1) {
                 return arr[i];
             }
         }
-        return -1; // Return -1 if no non-repeating element is found
+        return -1;
     }
 };
 
