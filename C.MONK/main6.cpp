@@ -36,5 +36,6 @@ int main() {
 
     return 0;
 }
+
 The array after removing duplicates: 1 2 3 4 5 
 Length of array with unique elements: 5
