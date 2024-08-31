@@ -135,3 +135,36 @@ int main() {
 }
 The smallest element in the array is: 0
 The smallest element in the array is: 5
+
+
+
+//FINAL=====================================================================================
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    int findSmallest(vector<int>& arr) {
+        int min = INT_MAX;
+
+        // Loop through the array to find the minimum element
+        for (int num : arr) {
+            if (num < min) {
+                min = num;
+            }
+        }
+        return min; // Return the smallest element found
+    }
+};
+
+int main() {
+    vector<int> arr = {1, 2, 3};  // Input array
+
+    Solution solution;
+    int smallest = solution.findSmallest(arr);  // Find the smallest element
+
+    cout << "The smallest element in the array is: " << smallest << endl;  // Output the result
+
+    return 0;
+}

@@ -1,4 +1,6 @@
-Q.4 Reverse a given Array
+Q.4 Reverse a given Array.?
+
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -42,6 +44,45 @@ Reversed array: 5 4 3 2 1
 
 
 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    void reverseArray(vector<int>& arr) {
+        int left = 0;
+        int right = arr.size() - 1;
+
+        // Swap elements from both ends until the middle is reached
+        while (left < right) {
+            swap(arr[left], arr[right]);
+            left++;
+            right--;
+        }
+    }
+};
+
+int main() {
+    Solution solution;
+    vector<int> arr = {1, 2, 3, 4, 5};
+
+    cout << "Original array: ";
+    for (int num : arr) {
+        cout << num << " ";
+    }
+    cout << endl;
+
+    solution.reverseArray(arr);
+
+    cout << "Reversed array: ";
+    for (int num : arr) {
+        cout << num << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
 
 
 
@@ -123,3 +164,37 @@ int main() {
     return 0;
 }
 OUTPUT == 4 3 2 1 
+
+
+
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+
+class Solution {
+public:
+    void reverseArray(vector<int>& arr) {
+        // Reverse the array using the built-in reverse function
+        reverse(arr.begin(), arr.end());
+    }
+    
+    void printArray(vector<int>& arr) {
+        cout << "The reversed array is: ";
+        for (int num : arr) {
+            cout << num << " ";
+        }
+        cout << endl;
+    }
+};
+
+int main() {
+    vector<int> arr = {5, 4, 3, 2, 1,0};
+
+    Solution solution;
+    solution.reverseArray(arr);
+    solution.printArray(arr);
+
+    return 0;
+}

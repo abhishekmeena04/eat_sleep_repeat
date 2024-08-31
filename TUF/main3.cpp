@@ -44,3 +44,56 @@ int main() {
 }
 Second smallest element: 2
 Second largest element: 50
+
+
+// FINAL-----------------------------------------------------------------------
+#include <iostream>
+#include <vector>
+#include <limits.h> // for INT_MAX and INT_MIN
+
+using namespace std;
+
+class Solution {
+public:
+    vector<int> findSmallestAndLargest(vector<int>& arr) {
+        int smallest = INT_MAX;
+        int largest = INT_MIN;
+        int secondSmallest = INT_MAX;
+        int secondLargest = INT_MIN;
+        
+        for (int num : arr) {
+            // Check for smallest and second smallest
+            if (num < smallest) {
+                secondSmallest = smallest;
+                smallest = num;
+            } else if (num < secondSmallest && num != smallest) {
+                secondSmallest = num;
+            }
+            
+            // Check for largest and second largest
+            if (num > largest) {
+                secondLargest = largest;
+                largest = num;
+            } else if (num > secondLargest && num != largest) {
+                secondLargest = num;
+            }
+        }
+        
+        return {smallest, secondSmallest, largest, secondLargest};
+    }
+};
+
+int main() {
+    Solution solution;
+    vector<int> arr = {3, 1, 4, 5, 2, 9, 7};
+    
+    vector<int> result = solution.findSmallestAndLargest(arr);
+    
+    // Output the results
+    cout << "Smallest: " << result[0] << endl;            // Smallest: 1
+    cout << "Second Smallest: " << result[1] << endl;     // Second Smallest: 2
+    cout << "Largest: " << result[2] << endl;             // Largest: 9
+    cout << "Second Largest: " << result[3] << endl;      // Second Largest: 7
+    
+    return 0;
+}
