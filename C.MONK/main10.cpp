@@ -13,6 +13,7 @@ public:
             // Check if the current element matches x
             if (arr[i] == x) {
                 return i; // Return the index of the first occurrence
+                return i+1; // Return the element of the first occurrence
             }
         }
         return -1; // If not found, return -1
