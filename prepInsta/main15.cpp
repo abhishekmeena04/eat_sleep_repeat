@@ -1,4 +1,4 @@
-Q.15. SORT sortColors
+Q.15. SORT sortColors - find 0,1,2 in an array asa sorted.
 
 #include <iostream>
 #include <vector>  // Include vector library
