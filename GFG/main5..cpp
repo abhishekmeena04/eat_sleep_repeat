@@ -1,4 +1,5 @@
 Q.13. Write a Program to Check Whether a Character is a Vowel or Consonant.?
+ans = :-
 
 #include <cctype>
 #include <iostream>

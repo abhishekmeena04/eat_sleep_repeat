@@ -1,4 +1,5 @@
-Q.12; Write a Program to Find the ASCII Value of a Character
+Q.12; Write a Program to Find the ASCII Value of a Character.?
+
 #include <iostream>
 using namespace std;
 
@@ -15,8 +16,9 @@ int main() {
 
     return 0;
 }
-Enter a character: A
-The ASCII value of 'A' is: 65
 
-Enter a character: $
-The ASCII value of '$' is: 36
+Enter a character: A;
+The ASCII value of 'A' is: 65;
+
+Enter a character: $;
+The ASCII value of '$' is: 36;
