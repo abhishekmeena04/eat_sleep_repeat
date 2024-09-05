@@ -156,3 +156,47 @@ Enter a string: abba
 Example 2:
 Enter a string: hello
 0
+
+
+
+
+// Example 1:
+
+// Input: x = 121
+// Output: true
+// Explanation: 121 reads as 121 from left to right and from right to left.
+// Example 2:
+
+// Input: x = -121
+// Output: false
+// Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
+// Example 3:
+
+// Input: x = 10
+// Output: false
+// Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
+
+
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        // Negative numbers and numbers ending with 0 (except 0 itself) are not palindromes
+        if (x < 0 || (x % 10 == 0 && x != 0)) {
+            return false;
+        }
+        
+        long originalNum = x;  // Use long to avoid overflow issues
+        long reversedNum = 0;  // Use long for reversed number
+        int remainder;
+        
+        // Reverse the digits of the number
+        while (x != 0) {
+            remainder = x % 10;               // Get the last digit
+            reversedNum = reversedNum * 10 + remainder; // Construct the reversed number
+            x = x / 10;                       // Remove the last digit from x
+        }
+        
+        // Check if the reversed number is the same as the original
+        return (originalNum == reversedNum);
+    }
+};
