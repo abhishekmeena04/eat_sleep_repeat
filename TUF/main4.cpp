@@ -198,3 +198,35 @@ int main() {
 
     return 0;
 }
+
+
+
+// optimal
+void reverseArray(vector<int>& arr) {
+    int start = 0;
+    int end = arr.size() - 1;
+
+    // Swap elements from start to end
+    while (start < end) {
+        swap(arr[start], arr[end]);  // Swap start and end elements
+        start++;  // Move start pointer towards the center
+        end--;    // Move end pointer towards the center
+
+        // reverse(arr, arr + n);
+    }
+}
+
+// Function to print the array
+void printArray(const vector<int>& arr) {
+    for (int i = 0; i < arr.size(); i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
+
+//
+void reverseArray(int arr[], int n) {
+   //Reversing elements from index 0 to n-1 
+   reverse(arr, arr + n);
+}

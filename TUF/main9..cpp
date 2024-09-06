@@ -43,3 +43,20 @@ int main() {
 
     return 0;
 }
+
+
+
+// optimal
+
+double calculateAverage(const vector<int>& arr) {
+    int n = arr.size();
+    int sum = 0;
+
+    // Calculate the sum of all elements
+    for (int i = 0; i < n; i++) {
+        sum += arr[i];
+    }
+
+    // Calculate and return the average
+    return static_cast<double>(sum) / n;
+}
