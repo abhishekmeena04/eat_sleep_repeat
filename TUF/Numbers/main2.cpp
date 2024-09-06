@@ -15,7 +15,7 @@
 
 
 Q. //
-            
+
 #include <iostream>
 using namespace std;
 
@@ -24,13 +24,10 @@ bool isPalindrome(int n) {
     int reverse = 0;  // Variable to store the reversed number
     int temp = n;     // Temporary variable for manipulation
 
-    // Reverse the number
     while (temp > 0) {
-        reverse = reverse * 10 + temp % 10;  // Append the last digit of temp to reverse
-        temp = temp / 10;                    // Remove the last digit from temp
+        reverse = reverse * 10 + temp % 10;  
+        temp = temp / 10;                    
     }
-
-    // Check if the reversed number is the same as the original
     return (n == reverse);
 }
 

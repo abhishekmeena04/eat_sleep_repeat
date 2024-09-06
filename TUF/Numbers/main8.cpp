@@ -1,0 +1,1 @@
+Sum of first N Natural Numbers.?

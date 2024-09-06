@@ -168,3 +168,38 @@ int main() {
 
     return 0;
 }
+
+
+
+Signed Integer: In a typical 32-bit system, an int can store values in the range of -2^31 to 2^31 - 1
+(i.e., from -2147483648 to 2147483647).
+INT_MIN is the smallest value: -2147483648.
+INT_MAX is the largest value: 2147483647.
+These constants are defined in the header <climits> (or <limits.h>).
+
+
+for (int i = 0; i < arr.size(); i++) {
+    cout << arr[i] << " ";
+}
+This loop will run from 0 to arr.size() - 1, printing each element of the vector.
+
+In summary, arr.size() gives the number of elements in the vector or container you're working with.
+
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    // Creating a vector with 5 elements
+    vector<int> arr = {10, 20, 30, 40, 50};
+
+    // Getting the size of the vector using arr.size()
+    cout << "Size of the array: " << arr.size() << endl;
+
+    return 0;
+}
+Size of the array: 5
+Explanation:
+arr.size() returns the number of elements in the vector arr.
+In this example, the size is 5, because the vector has 5 elements: {10, 20, 30, 40, 50}.
