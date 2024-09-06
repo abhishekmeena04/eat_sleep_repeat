@@ -202,4 +202,4 @@ int main() {
 Size of the array: 5
 Explanation:
 arr.size() returns the number of elements in the vector arr.
-In this example, the size is 5, because the vector has 5 elements: {10, 20, 30, 40, 50}.
+In this example, the size is 5, because the vector has 5 elements: {10, 20, 30, 40, 50};

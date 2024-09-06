@@ -54,6 +54,7 @@ Largest element in the array: 88
 using namespace std;
 
 int findLargestElement(const vector<int>& arr) {
+
     int largest = INT_MIN; 
 
     // Traverse the array to find the largest element
@@ -97,6 +98,7 @@ using namespace std;
 int findLargestElement(int arr[], int n) {
  
   int max = arr[0];
+  
   for (int i = 0; i < n; i++) {
     if (max < arr[i]) {
       max = arr[i];
