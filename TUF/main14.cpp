@@ -1,24 +1,41 @@
 Q.14. Find all repeating elements in an array.?
 
-#include<bits/stdc++.h>
+#include <iostream>
+#include <unordered_map>
+#include <vector>
 using namespace std;
 
+// Function to find all repeating elements
 void findRepeatingElements(vector<int>& arr) {
-    unordered_map<int,int> elementCount;
-    for(auto i:arr) ++elementCount[i];
-    
-    cout<<"The repeating elements are: ";
-    for(auto i:elementCount) {
-        if(i.second > 1) cout<<i.first<<" ";
+    unordered_map<int, int> freqMap;
+
+    // Traverse through the array and store frequencies of elements
+    for (int i = 0; i < arr.size(); i++) {
+        freqMap[arr[i]]++;
     }
+
+    // Output the repeating elements
+    cout << "Repeating elements are: ";
+    for (auto it : freqMap) {
+        if (it.second  1) {
+            cout << it.first << " ";  // Print elements with frequency > 1
+        }
+    }
+    cout << endl;   
 }
 
 int main() {
-    vector<int> arr = {1,1,2,3,4,4,5,2};
-    findRepeatingElements(arr);
-    
+    // Example 1
+    vector<int> arr1 = {1, 1, 2, 3, 4, 4, 5, 2};
+    findRepeatingElements(arr1);  // Output: 1 2 4
+
+    // Example 2
+    vector<int> arr2 = {1, 1, 0};
+    findRepeatingElements(arr2);  // Output: 1
+
     return 0;
 }
+
 
 Example 1:
 Input: 

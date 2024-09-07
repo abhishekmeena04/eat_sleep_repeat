@@ -17,10 +17,9 @@ int main() {
       }
     }
   }
-
 }
 
-Example 1:
+Example 1:  
 Input: (1,2),(2,1),(3,4),(4,5),(5,4)
 Output: (2,1) (5,4)
 Explanation: Since (1,2) and (2,1) are symmetric pairs and (4,5) and (5,4) are symmetric pairs.

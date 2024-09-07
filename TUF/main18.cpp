@@ -32,3 +32,33 @@ int main()
 	}
 	cout <<"The element is present in " <<ans<<" index";
 }
+
+
+#include <iostream>
+using namespace std;
+
+// Function to search for an element in the array
+int searchElement(const int arr[], int size, int k) {
+    for (int i = 0; i < size; ++i) {
+        if (arr[i] == k) {
+            return i; // Return the index if the element is found
+        }
+    }
+    return -1; // Return -1 if the element is not found
+}
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 5};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int k = 3;
+    
+    int result = searchElement(arr, size, k);
+    
+    if (result != -1) {
+        cout << "Element " << k << " is present at index " << result << endl;
+    } else {
+        cout << "Element " << k << " is not present in the array" << endl;
+    }
+    
+    return 0;
+}

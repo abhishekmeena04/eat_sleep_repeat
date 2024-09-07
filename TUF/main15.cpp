@@ -1,26 +1,43 @@
-Q.15. Find all the non-repeating elements in an array.?
+Q.14. Find all non repeating elements in an array.?
 
-#include<bits/stdc++.h>
+#include <iostream>
+#include <unordered_map>
+#include <vector>
 using namespace std;
 
-void findNonRepeatingElement(vector<int>& nums) {
-    // hashmap storing elements in the array as 
-    // key and their occurrences as value.
-    unordered_map<int,int> hashMap;
+// Function to find the first non-repeating element in the array
+int firstNonRepeatingElement(vector<int>& arr) {
+    unordered_map<int, int> freqMap;
 
-    for(auto i:nums) ++hashMap[i];
-    // if the count of elements equals to 1, it is a non-repeating element.
-    for(auto pairInMap:hashMap) 
-        if(pairInMap.second == 1) cout<<pairInMap.first<<" ";
+    // Step 1: Count the frequency of each element
+    for (int i = 0; i < arr.size(); i++) {
+        freqMap[arr[i]]++;
+    }
+
+    // Step 2: Traverse the array again to find the first non-repeating element
+    for (int i = 0; i < arr.size(); i++) {
+        if (freqMap[arr[i]] == 1) {
+            return arr[i]; // First non-repeating element
+        }
+    }
+
+    // Step 3: If no non-repeating element found, return 0
+    return 0;
 }
 
 int main() {
-    vector<int> nums = {1,2,-1,1,3,1};
-    cout<<"Non-repeating numbers are: "<<endl;
-    findNonRepeatingElement(nums);
-    
+    // Example 1
+    vector<int> arr1 = {-1, 2, -1, 3, 2};
+    cout << "First non-repeating element: " << firstNonRepeatingElement(arr1) << endl;  // Output: 3
+
+    // Example 2
+    vector<int> arr2 = {1, 1, 1};
+    cout << "First non-repeating element: " << firstNonRepeatingElement(arr2) << endl;  // Output: 0
+
     return 0;
 }
+
+
 
 Example 1:
 Input:
