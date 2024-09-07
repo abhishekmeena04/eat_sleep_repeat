@@ -33,33 +33,27 @@ Output: arr1[] is not a subset of arr2[]
 
 
 
-#include <iostream>
-#include <vector>
-#include <unordered_set>
-using namespace std;
+    #include <iostream>
+    #include <vector>
+    #include <unordered_set>
+    using namespace std;
 
-bool isSubset(const vector<int>& arr1, const vector<int>& arr2) {
-    // Create a set from arr2
-    unordered_set<int> setArr2(arr2.begin(), arr2.end());
-    
-    // Check each element of arr1
-    for (int elem : arr1) {
-        if (setArr2.find(elem) == setArr2.end()) {
-            return false; // elem not found in arr2
+    bool isSubset(const vector<int>& arr1, const vector<int>& arr2) {
+        // Create a set from arr2
+       
+       
+
+    }
+
+    int main() {
+        vector<int> arr1 = {1, 3, 4, 5, 2};
+        vector<int> arr2 = {2, 4, 3, 1, 7, 5, 15};
+        
+        if (isSubset(arr1, arr2)) {
+            cout << "arr1[] is a subset of arr2[]" << endl;
+        } else {
+            cout << "arr1[] is not a subset of arr2[]" << endl;
         }
+        
+        return 0;
     }
-    return true; // All elements of arr1 are found in arr2
-}
-
-int main() {
-    vector<int> arr1 = {1, 3, 4, 5, 2};
-    vector<int> arr2 = {2, 4, 3, 1, 7, 5, 15};
-    
-    if (isSubset(arr1, arr2)) {
-        cout << "arr1[] is a subset of arr2[]" << endl;
-    } else {
-        cout << "arr1[] is not a subset of arr2[]" << endl;
-    }
-    
-    return 0;
-}
