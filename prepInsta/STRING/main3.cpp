@@ -23,9 +23,9 @@ The ASCII value of 'A' is: 65;
 Enter a character: $;
 The ASCII value of '$' is: 36;
 
-Input: A
+Input: A-
 
-Output: The ASCII value of A is 65
+Output: The ASCII value of A is 65;
 Input: a
 
-Output: The ASCII value of a is 97
+Output: The ASCII value of a is 97;

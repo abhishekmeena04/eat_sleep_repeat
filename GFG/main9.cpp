@@ -2,19 +2,17 @@ Q. Write a Program to Count the Number of Vowels
 
 
 #include <iostream>
-#include <string>
 using namespace std;
 
-int countVowels(const string &str) {
+int countVowels(const char str[]) {
     int count = 0;
-    
-    for (int i = 0; i < str.length(); i++) {
-        // Convert character to lowercase to handle both upper and lower case vowels
-        char ch = tolower(str[i]);
 
+    // Loop through each character of the string
+    for (int i = 0; str[i] != '\0'; i++) {
+        char ch = tolower(str[i]);  // Convert each character to lowercase
         // Check if the character is a vowel
         if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
-            count++;
+            count++;  // Increment the count if it's a vowel
         }
     }
 
@@ -22,22 +20,22 @@ int countVowels(const string &str) {
 }
 
 int main() {
-    string input;
+    char str[100];  // Assuming the input string will be less than 100 characters
 
-    // Input the string from the user
+    // Input the string
     cout << "Enter a string: ";
-    getline(cin, input);
+    cin.getline(str, 100);  // Reading a line of text
 
-    // Count the number of vowels
-    int vowelCount = countVowels(input);
+    // Call the function to count vowels
+    int vowelCount = countVowels(str);
 
     // Output the result
-    cout << "The number of vowels in the string is: " << vowelCount << endl;
+    cout << "Number of vowels in the string: " << vowelCount << endl;
 
     return 0;
 }
 
-If the user inputs the string "Hello World":
 
+If the user inputs the string "Hello World":
 The vowels are 'e' and 'o' (twice).
 The output will be: "The number of vowels in the string is: 3". 

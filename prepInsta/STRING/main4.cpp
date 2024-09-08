@@ -27,3 +27,6 @@ int main() {
 
     return 0;
 }
+
+Enter a string: Hello World!
+The length of the string is: 12;
