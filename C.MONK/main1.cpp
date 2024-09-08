@@ -5,21 +5,20 @@ Q. Find first non repeating element in an given array of integer.?
 using namespace std;
 
 class Solution {
-public:
-    int firstNonRepeat(vector<int>& arr) {
-        unordered_map<int, int> mp;
+  public:
+    int firstNonRepeating(vector<int>& arr) {
+        unordered_map<int, int>freq;
         
-        for (int i = 0; i < arr.size(); i++) {
-            mp[arr[i]]++; 
+        for(auto num : arr){
+            freq[num]++;
         }
         
-        
-        for (int i = 0; i < arr.size(); i++) {
-            if (mp[arr[i]] == 1) {
-                return arr[i];
+        for(auto num : arr){
+            if(freq[num]==1){
+                return num;
             }
         }
-        return -1;
+        return 0;
     }
 };
 
