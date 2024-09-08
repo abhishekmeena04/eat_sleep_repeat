@@ -13,7 +13,6 @@ void frequency(vector<int>& arr){
     for(auto x: map){
         cout<<x.first <<" " <<x.second<<endl;
     }
-    
 }
 
 int main() {
