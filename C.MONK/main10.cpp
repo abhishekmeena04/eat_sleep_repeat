@@ -1,4 +1,4 @@
-Q. Search a number in an array.?
+Q. Search a number in an array by linear search.?
 
 
 #include <iostream>
