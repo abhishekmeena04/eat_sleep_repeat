@@ -17,6 +17,7 @@ public:
             }
         }
         return i + 1; // The length of the array with unique elements
+        return i; // The length of the array with unique index
     }
 };
 

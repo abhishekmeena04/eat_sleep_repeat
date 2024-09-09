@@ -19,7 +19,7 @@ public:
 
         // Check if all elements in arr2 are present in arr1 with sufficient frequency
         for (int num : arr2) {
-            if (freqMap[num] == 0) {
+            if (freqMap[num] > 0) {
                 return false; // Element from arr2 not found in arr1
             }
             freqMap[num]--; // Decrease the count for the found element
