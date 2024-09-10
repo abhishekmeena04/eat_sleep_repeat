@@ -12,7 +12,7 @@ string removeVowel(string &str) {
         
         // Check if the character is not a vowel
         if (lower != 'a' && lower != 'e' && lower != 'i' && lower != 'o' && lower != 'u') {
- *.0           result += str[i];  // If not a vowel, add it to the result string
+           result += str[i];  // If not a vowel, add it to the result string
         }
     }
     return result;  // Return the resulting string after removing vowels
