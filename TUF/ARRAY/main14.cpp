@@ -17,7 +17,7 @@ void findRepeatingElements(vector<int>& arr) {
     // Output the repeating elements
     cout << "Repeating elements are: ";
     for (auto it : freqMap) {
-        if (it.second  1) {
+        if (it.second > 1) {
             cout << it.first << " ";  // Print elements with frequency > 1
         }
     }
